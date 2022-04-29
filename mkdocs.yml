@@ -1,0 +1,9 @@
+site_name: napari-pram
+site_description: plugin for PRAM data annotation and processing
+site_author: Hieu Hoang
+
+theme: readthedocs
+
+
+pages:
+- Home: index.md

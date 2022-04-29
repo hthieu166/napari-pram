@@ -1,0 +1,48 @@
+name: napari-pram
+display_name: napari PRAM
+contributions:
+  commands:
+    - id: napari-pram.get_reader
+      python_name: napari_pram._reader:napari_get_reader
+      title: Open data with napari PRAM
+    - id: napari-pram.write_multiple
+      python_name: napari_pram._writer:write_multiple
+      title: Save multi-layer data with napari PRAM
+    - id: napari-pram.write_single_image
+      python_name: napari_pram._writer:write_single_image
+      title: Save image data with napari PRAM
+    - id: napari-pram.make_sample_data
+      python_name: napari_pram._sample_data:make_sample_data
+      title: Load sample data from napari PRAM 
+    - id: napari-pram.make_qwidget
+      python_name: napari_pram._widget:ExampleQWidget
+      title: Make example QWidget
+    - id: napari-pram.make_magic_widget
+      python_name: napari_pram._widget:example_magic_widget
+      title: Make example magic widget
+    - id: napari-pram.make_func_widget
+      python_name: napari_pram._widget:example_function_widget
+      title: Make example function widget 
+  readers:
+    - command: napari-pram.get_reader
+      accepts_directories: false
+      filename_patterns: ['*.npy'] 
+  writers:
+    - command: napari-pram.write_multiple
+      layer_types: ['image*','labels*']
+      filename_extensions: []
+    - command: napari-pram.write_single_image
+      layer_types: ['image']
+      filename_extensions: ['.npy'] 
+  sample_data:
+    - command: napari-pram.make_sample_data
+      display_name: napari PRAM
+      key: unique_id.1 
+  widgets:
+    - command: napari-pram.make_qwidget
+      display_name: Example QWidget
+    - command: napari-pram.make_magic_widget
+      display_name: Example Magic Widget
+    - command: napari-pram.make_func_widget
+      autogenerate: true
+      display_name: Example Function Widget 
