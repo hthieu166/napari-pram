@@ -7,7 +7,9 @@
 [![codecov](https://codecov.io/gh/hthieu166/napari-pram/branch/main/graph/badge.svg)](https://codecov.io/gh/hthieu166/napari-pram)
 [![napari hub](https://img.shields.io/endpoint?url=https://api.napari-hub.org/shields/napari-pram)](https://napari-hub.org/plugins/napari-pram)
 
-plugin for PRAM data annotation and processing
+Plugin for PRAM data annotation and processing.
+
+![PRAM Demo](docs/figs/demo.jpg)
 
 ----------------------------------
 
@@ -22,11 +24,21 @@ https://napari.org/plugins/stable/index.html
 -->
 
 ## Installation
+You will need a python environment. I recommend [Conda](https://docs.conda.io/en/latest/miniconda.html). Create a new environment, for example:
+    
+    conda create --name napari-env python=3.7 pip 
 
-You can install `napari-pram` via [pip]:
+Activate the new environment:
+
+    conda activate napari-env 
+
+Install [napari](https://napari.org/tutorials/fundamentals/installation) via [pip]:
+
+    pip install napari[all]
+
+Then you can finally install our plugin `napari-pram` via [pip]:
 
     pip install napari-pram
-
 
 
 

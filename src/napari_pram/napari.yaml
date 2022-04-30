@@ -37,4 +37,4 @@ contributions:
       key: unique_id.1 
   widgets:
     - command: napari-pram.open_panel
-      display_name: View PRAM's toolbox
+      display_name: Open PRAM's toolbox
