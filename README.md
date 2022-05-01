@@ -29,6 +29,29 @@ https://napari.org/plugins/stable/index.html
 
 On the toolbar, select ``[Plugins] > napari-pram: Open PRAM's toolbox``
 
+### Load PRAM image and annotations:
+
+Press <kbd>Command/Control</kbd> + <kbd>O</kbd>: 
+- Select `*.json` files for annotations (from either [VGG Annotator](https://www.robots.ox.ac.uk/~vgg/software/via/) or `napari-pram`)
+- Select `*.png` files for PRAM image
+
+### Annotate
+- Press <kbd>Annotate</kbd>
+- Click the plus-in-circle icon on the top-left panel and start editing
+
+### Run PRAM particles detector
+- Select a proper threshold between 1 (ultra sensitive) - 10 (less sensitive)
+- Press <kbd>Run Detector</kbd>
+
+### Evaluate
+- Press <kbd>Evaluate</kbd>
+- Hide/Unhide true positive/ false postive/false negative layers
+
+### Load new image
+- Press <kbd>Clear All</kbd> to remove all layers
+
+### Export to JSON
+- Press <kbd>Save to File</kbd> to export all annotations, predictions from the algorithm to a JSON file
 ## Installation
 You will need a python environment. I recommend [Conda](https://docs.conda.io/en/latest/miniconda.html). Create a new environment, for example:
     
