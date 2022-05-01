@@ -25,4 +25,4 @@ def eval_pred(gt, preds, thr_dst = 20):
     fp = len(preds) - tp
     recall= tp/(tp + fn)
     prec  = tp/(tp + fp)
-    return prec, recall, tps, fns
+    return prec, recall, tps.astype(np.bool), fns.astype(np.bool)

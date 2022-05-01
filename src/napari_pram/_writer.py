@@ -22,3 +22,6 @@ def write_single_image(path: str, data: Any, meta: dict):
 def write_multiple(path: str, data: List[FullLayerData]):
     """Writes multiple layers of different types."""
     pass
+
+def write_points(path: str, data: Any):
+    pass

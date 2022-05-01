@@ -23,6 +23,12 @@ and review the napari docs for plugin developers:
 https://napari.org/plugins/stable/index.html
 -->
 
+## Usage
+
+### Open `napari-pram` toolbox:
+
+On the toolbar, select ``[Plugins] > napari-pram: Open PRAM's toolbox``
+
 ## Installation
 You will need a python environment. I recommend [Conda](https://docs.conda.io/en/latest/miniconda.html). Create a new environment, for example:
     
@@ -40,7 +46,9 @@ Then you can finally install our plugin `napari-pram` via [pip]:
 
     pip install napari-pram
 
+Alternatively, the plugin can be installed using napari-GUI
 
+``[Plugins] > Install/Uninstall Plugins`` and search for `napari-pram`
 
 ## Contributing
 

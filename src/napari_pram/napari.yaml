@@ -2,9 +2,12 @@ name: napari-pram
 display_name: napari PRAM
 contributions:
   commands:
-    - id: napari-pram.get_reader
-      python_name: napari_pram._reader:napari_get_reader
-      title: Open data with napari PRAM
+    - id: napari-pram.get_img_reader
+      python_name: napari_pram._reader:reader_pram_image
+      title: Open PRAM image with napari PRAM
+    - id: napari-pram.get_vgg_annot_reader
+      python_name: napari_pram._reader:reader_vgg_annot
+      title: Open VGG annotation with napari PRAM
     - id: napari-pram.write_multiple
       python_name: napari_pram._writer:write_multiple
       title: Save multi-layer data with napari PRAM
@@ -20,17 +23,22 @@ contributions:
     - id: napari-pram.open_panel
       python_name: napari_pram.main_napari:PramQWidget
       title: Show PRAM toolbox
+
   readers:
-    - command: napari-pram.get_reader
+    - command: napari-pram.get_img_reader
       accepts_directories: false
-      filename_patterns: ['*.npy'] 
+      filename_patterns: ['*.png'] 
+    - command: napari-pram.get_vgg_annot_reader
+      accepts_directories: false
+      filename_patterns: ['*.json']
+
   writers:
     - command: napari-pram.write_multiple
       layer_types: ['image*','labels*']
       filename_extensions: []
     - command: napari-pram.write_single_image
       layer_types: ['image']
-      filename_extensions: ['.npy'] 
+      filename_extensions: ['.npy']
   sample_data:
     - command: napari-pram.make_sample_data
       display_name: napari PRAM
