@@ -9,7 +9,7 @@
 
 Plugin for PRAM data annotation and processing.
 
-![PRAM Demo](docs/figs/demo.jpg)
+![PRAM Demo](https://raw.githubusercontent.com/hthieu166/napari-pram/main/docs/figs/demo.jpg)
 
 ----------------------------------
 
@@ -53,6 +53,10 @@ Press <kbd>Command/Control</kbd> + <kbd>O</kbd>:
 ### Export to JSON
 - Press <kbd>Save to File</kbd> to export all annotations, predictions from the algorithm to a JSON file
 ## Installation
+Following this [tutorial](https://napari.org/tutorials/fundamentals/quick_start.html) to install `napari`. 
+
+Alternatively, you can follow my instructions as follows:
+
 You will need a python environment. I recommend [Conda](https://docs.conda.io/en/latest/miniconda.html). Create a new environment, for example:
     
     conda create --name napari-env python=3.7 pip 
